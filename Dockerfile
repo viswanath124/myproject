@@ -1,4 +1,3 @@
-FROM httpd
-copy target/myapp.war /usr/local/apache2/conf/httpd.conf
+FROM tomcat:9
 
-
+COPY target/myapp.war /usr/local/tomcat/webapps/myapp.war
